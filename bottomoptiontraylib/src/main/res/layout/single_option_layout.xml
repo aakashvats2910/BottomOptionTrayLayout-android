@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content" android:orientation="horizontal">
+
+    <ImageView
+        android:id="@+id/option_icon"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@mipmap/ic_launcher_round"
+        android:layout_marginStart="8dp"
+        android:padding="8dp"/>
+
+    <Button
+        android:id="@+id/clickable_option_button"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="testing button"
+        android:gravity="start|center_vertical"
+        android:paddingStart="16dp"
+        android:paddingEnd="32dp"
+        android:background="@drawable/button_background_ripple"/>
+
+</LinearLayout>

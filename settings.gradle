@@ -1,0 +1,3 @@
+include ':bottomoptiontraylib'
+include ':app'
+rootProject.name = "BottomOptionTrayLayout"
