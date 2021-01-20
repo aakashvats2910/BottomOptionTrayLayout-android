@@ -4,6 +4,9 @@ Simple to use API for opening a bottom-option-tray for choosing an option from l
 
 [![](https://jitpack.io/v/aakashvats2910/BottomOptionTrayLayout-android.svg)](https://jitpack.io/#aakashvats2910/BottomOptionTrayLayout-android)
 
+[![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](https://GitHub.com/Naereen/StrapDown.js/graphs/commit-activity)
+
+
 <h2> Implementation</h2>
 Add it in your root build.gradle at the end of repositories:
 
@@ -20,12 +23,9 @@ Add it in your project level build.gradle file:
 
 ```gradle
 dependencies {
-  implementation 'com.github.aakashvats2910:BottomOptionTrayLayout-android:Tag'
+  implementation 'com.github.aakashvats2910:BottomOptionTrayLayout-android:1.0'
 }
 ```
-<i>Tag is the latest jitpack version of dependency</i>
-
-<
 
 <h2> Documentation </h2>
 
@@ -48,3 +48,28 @@ TrayOptionList.Option option1 = new TrayOptionList.Option(String optionText, Dra
 TrayOptionList.Option option1 = new TrayOptionList.Option(String optionText, int optionDrawableId, int optionId);
 ```
 <br/>
+
+After that get an instance for ShowOption and open the tray by the following code:
+```
+ShowOptions s = ShowOptions.getNewInstance(trayOptionsList);
+s.openTray(context);
+```
+
+To get the selected option we have to set an ShowOptions.OnTrayOptionSelectedListener,
+```
+s.setOnTrayOptionSelectedListener(new ShowOptions.OnTrayOptionSelectedListener() {
+    @Override
+    protected void onTrayOptionSelected(int optionId, String optionText, TrayOptionsList.Option option) {
+
+    }
+});
+```
+
+<h2><i>NOTE</i></h2>
+<ol>
+<li>The ShowOptions class is a singleton class i.e. only one object of the class can be created and used at a time.</li>
+<li>No public constructor is available for this class.</li>
+Whenever a new instance of the ShowOptions class is created it overwrites the previous instance.
+</ol>
+
+Feel free to contact me on <b>aakashvats2910@gmail.com</b> 
