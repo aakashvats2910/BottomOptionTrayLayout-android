@@ -69,7 +69,15 @@ s.setOnTrayOptionSelectedListener(new ShowOptions.OnTrayOptionSelectedListener()
 <ol>
 <li>The ShowOptions class is a singleton class i.e. only one object of the class can be created and used at a time.</li>
 <li>No public constructor is available for this class.</li>
-Whenever a new instance of the ShowOptions class is created it overwrites the previous instance.
+<li>Whenever a new instance of the ShowOptions class is created it overwrites the previous instance.</li>
 </ol>
 
-Feel free to contact me on <b>aakashvats2910@gmail.com</b> 
+<br/>
+This project is a free open source project and anyone willing can modify and publish their own version by creating a copy for themselves.
+<br/>
+
+<br/>
+
+[![Ask Me Anything !](https://img.shields.io/badge/Ask%20me-anything-1abc9c.svg)](https://GitHub.com/Naereen/ama)
+
+Feel free to contact me on "aakashvats2910@gmail.com"
